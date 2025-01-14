@@ -10,8 +10,8 @@ public class ApiErrorResponse {
     private final String resultCode;
     private final String message;
 
-    public ApiErrorResponse(ErrorSpec errorSpec, String message) {
+    public ApiErrorResponse(ErrorSpec errorSpec) {
         this.resultCode = errorSpec.getResultCode();
-        this.message = message;
+        this.message = errorSpec.getMessage();
     }
 }

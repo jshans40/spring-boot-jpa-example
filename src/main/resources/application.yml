@@ -1,9 +1,9 @@
 server:
-  port: 11000
+  port: 8080
 
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/test_01?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC&autoReconnect=true
-    username: test
-    password: 01112233
+    url: jdbc:mysql://127.0.0.1:3306/test_db?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC&autoReconnect=true
+    username: root
+    password: 400gks1092!

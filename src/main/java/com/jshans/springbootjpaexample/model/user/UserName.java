@@ -3,7 +3,9 @@ package com.jshans.springbootjpaexample.model.user;
 import com.jshans.springbootjpaexample.exception.ApiException;
 import com.jshans.springbootjpaexample.exception.constant.ApiError;
 import jakarta.persistence.Column;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
 public class UserName {
 
     @Column(name = "name", columnDefinition = "VARCHAR(16)")

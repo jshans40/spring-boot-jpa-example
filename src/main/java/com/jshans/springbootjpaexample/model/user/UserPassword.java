@@ -3,10 +3,12 @@ package com.jshans.springbootjpaexample.model.user;
 import com.jshans.springbootjpaexample.exception.ApiException;
 import com.jshans.springbootjpaexample.exception.constant.ApiError;
 import jakarta.persistence.Column;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Comment;
 
 import java.util.regex.Pattern;
 
+@NoArgsConstructor
 public class UserPassword {
 
     private static final String PASSWORD_REGEX =
@@ -17,8 +19,8 @@ public class UserPassword {
     @Column(name = "password", columnDefinition = "VARCHAR(256)", nullable = false)
     private String value;
 
-    public UserPassword(String password) {
-        validatePassword(password);
+    public UserPassword(String value) {
+        validatePassword(value);
         this.value = value;
     }
 
