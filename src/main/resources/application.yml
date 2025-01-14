@@ -4,6 +4,6 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/VIEWINTER_HR_FOXEDU?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC&autoReconnect=true
-    username: root
-    password: gene!22aXlab134AC
+    url: jdbc:mysql://127.0.0.1:3306/test_01?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimezone=UTC&autoReconnect=true
+    username: test
+    password: 01112233
